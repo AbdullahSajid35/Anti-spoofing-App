@@ -49,7 +49,7 @@ const WebcamVideoCapture = ({ setIsCameraOn, model = "resnet" }) => {
     const base64Data = imageSrc.split(",")[1];
     try {
       const response = await axios.post(
-        "https://abdullahsajid-antispoofing-api.hf.space/", // Replace with your Hugging Face Space API URL
+        "https://abdullahsajid-antispoofing-api.hf.space/api/face", 
         {
           imageData: base64Data,
           filename: "image.jpg",
