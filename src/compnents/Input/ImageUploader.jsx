@@ -38,7 +38,7 @@ function ImageUploader() {
 
     try {
       const response = await axios.post(
-        "https://abdullahsajid-antispoofing-api.hf.space/",
+        "https://abdullahsajid-antispoofing-api.hf.space/api/face",
         {
           imageData: base64Data,
           filename: "image.jpg",
